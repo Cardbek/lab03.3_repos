@@ -12,8 +12,8 @@ using namespace std;
 
 int main()
 {
-    double x; 
-    double R;   
+    double x;
+    double R;
     double y;
 
     cout << " Vvedit R: ";
@@ -21,27 +21,16 @@ int main()
     cout << "Vvedit x: ";
     cin >> x;
     if (x < -5)
-    {
         y = -3.0;
-    }
     else if (x <= -R)
-    {
         y = (3.0 / (5.0 - R)) * (x + R);
-    }
     else if (x < R)
-    {
         y = sqrt(R * R - x * x);
-    }
     else if (x <= 8)
-    {
         y = (R / (8.0 - R)) * (x - R);
-    }
     else
-    {
         y = R;
-    }
     cout << endl;
-    cout << fixed << setprecision(4); // 4 знаки після коми вивід
     cout << "y = " << y << endl;
     cin.get();
     return 0;
